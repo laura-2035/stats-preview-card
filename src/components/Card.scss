@@ -1,8 +1,9 @@
 @import '../assets/scss/variables';
 
-.container{
+.card{
     width: min(90%, 50vw); 
     background-color: $card-color;
+
     img{
         width: 100%;
     }
