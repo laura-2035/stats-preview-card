@@ -1,0 +1,13 @@
+@import './assets/scss/typhography';
+@import './assets/scss/variables';
+@import './assets/scss/mixins';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter';
+  background-color: $bg-color;
+  @include flexContent(center, center, column);
+}

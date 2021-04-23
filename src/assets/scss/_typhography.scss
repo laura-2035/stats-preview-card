@@ -1,0 +1,33 @@
+@import './variables';
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fonts/LexendDeca-Regular.ttf');
+    font-weight: 400;
+}
+
+
+h1,h2{
+    color: $h-color;
+    font-weight: 700;
+}
+p{
+    color: $p-color;
+    font-weight: 400;
+}
+
+.info p{
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    font-weight: 400;
+}
