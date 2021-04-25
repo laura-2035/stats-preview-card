@@ -1,6 +1,7 @@
-@import './assets/scss/typhography';
+@import './assets/scss/typography';
 @import './assets/scss/variables';
 @import './assets/scss/mixins';
+@import './assets/scss/medias';
 
 *{
   margin: 0;
@@ -9,5 +10,11 @@
 body{
   font-family: 'Inter';
   background-color: $bg-color;
-  @include flexContent(center, center, column);
+  @include flexContent(center, center, row);
+  height: 100vh; 
+  box-sizing: border-box;
+  
+}
+.container{
+    @include flexContent(center, center, row);
 }

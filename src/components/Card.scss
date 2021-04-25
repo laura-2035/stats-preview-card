@@ -1,10 +1,40 @@
 @import '../assets/scss/variables';
+@import '../assets/scss/mixins';
 
 .card{
-    width: min(90%, 50vw); 
+    @include flexContent(center, center, row);
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 5%;
+    width: min(90%, 90vw); 
     background-color: $card-color;
-
+    border-radius: 1em;
+    margin: 2em;
+   
     img{
+        display: block;
         width: 100%;
+        opacity: 50%;
+    }
+    .filter{
+        background-color: $accent;
+    }
+    .hero-image{
+        
+    }
+    .hero-statement{
+        height: 100%;
+        width: 80%;
+        @include flexContent(center, start, column);
+        text-align: center;
+        gap: 1em;
+        margin-top: 10%;
+        .info{            
+            gap: 1.5em;
+            margin: 1.5em auto;
+        }
+    }
+    .hero-image-desktop{
+        display: none;
     }
 }

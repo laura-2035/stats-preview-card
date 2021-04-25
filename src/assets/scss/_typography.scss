@@ -16,7 +16,12 @@
     font-weight: 400;
 }
 
-
+h1{
+    font-size: min(7vw, 4em);
+}
+h2{
+    font-size: min(7vw, 3em);
+}
 h1,h2{
     color: $h-color;
     font-weight: 700;
@@ -24,10 +29,16 @@ h1,h2{
 p{
     color: $p-color;
     font-weight: 400;
+    line-height: 3vh; 
+    font-size: clamp(0.9em, 2vw, 1.5em);
 }
 
 .info p{
-    font-family: 'Lexend Deca';
+    letter-spacing: .1em;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: clamp(0.8em, 2vw, 1.5em);
+}
+.accent{
+    color: $accent;
 }
