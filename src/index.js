@@ -10,7 +10,7 @@ ReactDOM.render(
     experience, and overall efficiency."
     companies="10k+"
     templates="314" 
-    queries="12m+">
+    queries="12M+">
   </Card>,
   document.getElementById('root')
 );

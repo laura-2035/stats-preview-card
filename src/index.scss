@@ -14,7 +14,10 @@ body{
   height: 100vh; 
   box-sizing: border-box;
   
+  
 }
 .container{
     @include flexContent(center, center, row);
+    width: 80%;
+    margin: 0 auto;
 }

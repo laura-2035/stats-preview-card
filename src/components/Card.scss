@@ -1,16 +1,17 @@
 @import '../assets/scss/variables';
 @import '../assets/scss/mixins';
 
+
 .card{
     @include flexContent(center, center, row);
     flex-wrap: wrap;
     flex: 1;
     gap: 5%;
-    width: min(90%, 90vw); 
     background-color: $card-color;
     border-radius: 1em;
     margin: 2em;
-   
+    overflow: hidden;
+    
     img{
         display: block;
         width: 100%;
@@ -18,6 +19,7 @@
     }
     .filter{
         background-color: $accent;
+        
     }
     .hero-image{
         
@@ -30,11 +32,51 @@
         gap: 1em;
         margin-top: 10%;
         .info{            
-            gap: 1.5em;
-            margin: 1.5em auto;
+            gap: 4em;
+            margin: 1.5em 0;
         }
     }
     .hero-image-desktop{
         display: none;
     }
+}
+@media screen and (min-width: 576px){
+    .info{
+        width: 100%;
+        @include flexContent(center, space-between, row);
+    }
+}
+@media screen and (min-width: 1200px){
+    .card{
+        flex-wrap: nowrap;
+        .hero-statement{
+            width: 50%;
+            margin-top: unset;
+            text-align: left;
+            .hero-title{
+                margin: 5% auto;
+            }
+            .hero-description{
+                margin-bottom: 5%;
+            }
+            .hero-title, .hero-description{
+                
+                text-align: left;
+            }
+            & > *{
+                width: 80%;
+            }
+        }
+        .hero-image-desktop{
+            display: block;
+            width: 50%;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .hero-image{
+            display: none;
+        }
+    } 
 }
