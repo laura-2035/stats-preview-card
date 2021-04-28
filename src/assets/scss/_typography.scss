@@ -17,10 +17,10 @@
 }
 
 h1{
-    font-size: min(7vw, 3em);
+    font-size: min(7vw, 2.1em);
 }
 h2{
-    font-size: min(7vw, 1.8em);
+    font-size: min(7vw, 1.3em);
 }
 h1,h2{
     color: $h-color;
@@ -30,14 +30,14 @@ p{
     color: $p-color;
     font-weight: 400;
     line-height: 2em; 
-    font-size: clamp(0.9em, 2vw, 1.25em);
+    font-size: clamp(0.9em, 2vw, 0.8em);
 }
 
 .info p{
     letter-spacing: .1em;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: clamp(0.8em, 2vw, 1.0em);
+    font-size: clamp(0.8em, 2vw, 0.8em);
 }
 .accent{
     color: $accent;
